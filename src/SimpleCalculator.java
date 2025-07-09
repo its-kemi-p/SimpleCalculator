@@ -63,6 +63,9 @@ public class SimpleCalculator {
                 //Displaying the results formatted to 2 decimal places
                 System.out.printf("%.2f / %.2f = %.2f%n",num1,num2,result);
                 break;
+            default:
+                //Handle invalid operator input
+                System.out.println("Error: Please enter a valid operator [+,-,* or /]");
 
         }
 
