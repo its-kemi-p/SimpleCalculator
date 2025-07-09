@@ -37,6 +37,35 @@ public class SimpleCalculator {
         //Storing the second number
         num2=scanner.nextDouble();
 
+        //switch statements to perform the calculation based on the operator
+        switch (operator){
+            case '+':
+                //performing addition and storing result
+                result=num1+num2;
+                //Displaying the results formatted to 2 decimal places
+                System.out.printf("%.2f + %.2f = %.2f%n",num1,num2,result);
+                break;
+            case '-':
+                //performing subtraction and storing result
+                result=num1-num2;
+                //Displaying the results formatted to 2 decimal places
+                System.out.printf("%.2f - %.2f = %.2f%n",num1,num2,result);
+                break;
+            case '*':
+                //performing multiplication and storing result
+                result=num1*num2;
+                //Displaying the results formatted to 2 decimal places
+                System.out.printf("%.2f * %.2f = %.2f%n",num1,num2,result);
+                break;
+            case '/':
+                //performing division and storing result
+                result=num1/num2;
+                //Displaying the results formatted to 2 decimal places
+                System.out.printf("%.2f / %.2f = %.2f%n",num1,num2,result);
+                break;
 
+        }
+
+    scanner.close(); //close the scanner
     }
 }
